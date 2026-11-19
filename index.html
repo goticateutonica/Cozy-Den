@@ -180,17 +180,14 @@
     query, orderBy, onSnapshot, serverTimestamp
   } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-  // ===== PEGÁ ACÁ TU CONFIGURACIÓN DE FIREBASE =====
   const firebaseConfig = {
-    apiKey: "PEGAR_AQUI",
-    authDomain: "PEGAR_AQUI",
-    projectId: "PEGAR_AQUI",
-    storageBucket: "PEGAR_AQUI",
-    messagingSenderId: "PEGAR_AQUI",
-    appId: "PEGAR_AQUI"
-  };
-  // =================================================
-
+  apiKey: "AIzaSyBOdKVYG1fHIGPsGbwlGosmdxOj9Qq10co",
+  authDomain: "cozy-den-a35dd.firebaseapp.com",
+  projectId: "cozy-den-a35dd",
+  storageBucket: "cozy-den-a35dd.firebasestorage.app",
+  messagingSenderId: "788062063162",
+  appId: "1:788062063162:web:ec541ff1db57023bb48303"
+};
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const db = getFirestore(app);
