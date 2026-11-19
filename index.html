@@ -34,7 +34,7 @@ h2{font-size:.95rem;color:var(--mute);margin:22px 0 8px}
 .del{background:none;border:0;color:var(--mute);padding:0}
 #status{color:var(--mute);font-size:.9rem;margin:10px 0}
 [hidden]{display:none!important}
-.hero img,.note img{display:block;width:100%;max-height:320px;object-fit:cover;border-radius:12px;margin:8px 0}
+.hero img,.note img{display:block;width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:12px;margin:8px 0}
 .preview{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .preview img{width:64px;height:64px;object-fit:cover;border-radius:10px;margin:0}
 .box .chip{padding:9px 12px}
@@ -53,7 +53,7 @@ h2{font-size:.95rem;color:var(--mute);margin:22px 0 8px}
 <body>
 <section id="login" class="login" hidden>
   <form id="loginForm">
-    <div class="top"><h1>🦉 Cozy Den</h1><button id="logout" class="del" type="button">Salir</button></div>
+    <h1>🦉 Cozy Den</h1>
     <p class="lead">Ingresa con tu correo para ver y enviar notas.</p>
     <label for="email">Correo</label>
     <input id="email" type="email" autocomplete="username" required>
@@ -64,7 +64,7 @@ h2{font-size:.95rem;color:var(--mute);margin:22px 0 8px}
   </form>
 </section>
 <main id="app" hidden>
-  <h1>🦉 Cozy Den</h1>
+  <div class="top"><h1>🦉 Cozy Den</h1><button id="logout" class="del" type="button">Salir</button></div>
   <section class="hero" aria-live="polite">
     <small id="heroMeta">Aún no hay notas</small>
     <p id="heroText">Escribe la primera nota para tu batatita 💗</p>
